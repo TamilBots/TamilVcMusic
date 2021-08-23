@@ -1,7 +1,8 @@
 pyrogram
 TgCrypto
-py-tgcalls==0.5.2
+py-tgcalls
 python-dotenv
+youtube_dl
 youtube_search_python
 requests
 aiohttp
@@ -11,4 +12,9 @@ youtube_search
 search_engine_parser
 ffmpeg
 Pillow
-ujson
+python-arq
+future
+psutil
+wget
+tswift
+node=>15.0
