@@ -1,0 +1,39 @@
+{
+  "name": "Tamili Music",
+  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
+  "keywords": ["music", "voicechat", "telegram"],
+  "repository": "https://github.com/TamilBots/TamilVcMusic",
+  "stack": "container",
+  "env": {
+    "SESSION_NAME": {
+      "description": "Pyrogram session string",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "A Bot Token From @BotFather",
+      "required": true
+    },
+    "BOT_NAME": {
+      "description": "Your MusicPlayer Bot Name.",
+      "required": false,
+      "value": "Tamili Vc Assistant"
+    },
+    "API_ID": {
+      "description": "App ID From my.telegram.org/apps",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "App Hash From my.telegram.org/apps",
+      "required": true
+    },
+    "SUDO_USERS": {
+      "description": "List Of User IDs Counted As Admin Everywhere (Separated By Space).",
+      "required": true
+    },
+    "DURATION_LIMIT": {
+      "description": "Max Audio Duration Limit For Downloads (Minutes).",
+      "required": true,
+      "value": "10"
+    }
+  }
+}
