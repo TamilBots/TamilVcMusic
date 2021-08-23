@@ -1,0 +1,14 @@
+pyrogram
+TgCrypto
+py-tgcalls==0.5.2
+python-dotenv
+youtube_search_python
+requests
+aiohttp
+aiofiles
+asyncio
+youtube_search
+search_engine_parser
+ffmpeg
+Pillow
+ujson
