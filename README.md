@@ -183,4 +183,4 @@ If you donlt like to play in linked channel:
 
 > This project exists thanks to these awesome developers and their codes and contributions.
 
-<a href="https://github.com/TamilBots/TamilVcMusic/graphs/contributors"><img src="https://opencollective.com/tamilbots/contributors.svg?width=890&button=false" /></a>
+<a href="https://github.com/ivetri/TamilVcMusic/graphs/contributors"><img src="https://opencollective.com/ivetri/contributors.svg?width=890&button=false" /></a>
