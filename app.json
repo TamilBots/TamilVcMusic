@@ -1,21 +1,29 @@
 {
   "name": "TamilVcMusic",
-  "logo": "https://telegra.ph/file/5a24274c6a6455f9a8d8f.png",
-  "description": "Open-Source Bot To Play Songs In Your Telegram's Group Voice Chat. Powered by PyTgCalls.",
+  "logo": "https://telegra.ph/file/ffb4e9d11c65d6eb74df5.jpg",
+  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
   "repository": "https://github.com/TamilBots/TamilVcMusic",
   "stack": "container",
+  "buildpacks": [
+   {
+     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+   },
+   {
+     "url": "heroku/python"
+   }   
+  ],        
   "env": {
     "SESSION_NAME": {
-      "description": "Pyrogram Session String",
+      "description": "Pyrogram session string",
       "required": true
     },
     "BOT_TOKEN": {
-      "description": "A Bot Token From @BotFather",
+      "description": "A bot token from @BotFather",
       "required": true
     },
     "BOT_USERNAME": {
-      "description": "Your Bot's Username Without @",
+      "description": "Your bot's username without @",
       "required": true
     },
     "BOT_NAME": {
@@ -24,7 +32,7 @@
       "value": ""
     },
     "SUPPORT_GROUP": {
-      "description": "Your MusicPlayer Support Group Without @ [Leave This If You Don't Have One]",
+      "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
       "required": false,
       "value": "TamilSupport"
     },
@@ -34,47 +42,45 @@
       "value": "TamilBots"
     },
     "ASSISTANT_NAME": {
-      "description": "Your MusicPlayer's Assistant Username Without @.",
+      "description": "Your MusicPlayer's assistant Username without @.",
       "required": true
     },
     "ARQ_API_KEY": {
       "description": "Get from @ARQRobot.",
       "required": false,
-      "value": "GUGFNB-XPUZDX-XGCKTJ-UZXHBZ-ARQ"
+      "value": ""
     },    
     "BG_IMAGE": {
-      "description": "BG image of bot (Use Transparent One) [IGNORE].",
+      "description": "BG image of bot (Use transparent one) [IGNORE].",
       "required": false,
-      "value": "https://telegra.ph/file/7fb842a7a7791ff75489b.png"
+      "value": "https://telegra.ph/file/5a24274c6a6455f9a8d8f.png"
     },     
     "UPDATES_CHANNEL": {
-      "description": "Updates Channel Without @ [Leave This If You Don't Have One].",
+      "description": "Updates Channel without @ [Leave this if you don't have one].",
       "required": false,
-      "value": "tamilBots"
+      "value": "TamiliniUpdate"
     },    
     "API_ID": {
-      "description": "App ID From my.telegram.org/apps",
+      "description": "App ID from my.telegram.org/apps",
       "required": true
     },
     "PMPERMIT": {
-      "description": "Change To Turn off",
+      "description": "Change to turn off",
       "required": false,
       "value": "ENABLE"
     },    
     "API_HASH": {
-      "description": "App Hash From my.telegram.org/apps",
+      "description": "App hash from my.telegram.org/apps",
       "required": true
     },
     "SUDO_USERS": {
-      "description": "List Of User IDs Counted As Admin Everywhere (Separated by space).",
+      "description": "List of user IDs counted as admin everywhere (separated by space).",
       "required": true
-      "value": "1492186775 1169076058"
     },
     "DURATION_LIMIT": {
-      "description": "Max Audio Duration Limit For Downloads (Minutes).",
+      "description": "Max audio duration limit for downloads (minutes).",
       "required": true,
       "value": "10"
     }
   }
 }
-
