@@ -10,12 +10,6 @@
   </a>
 </p>
 
-<p align="center">
-  <a href="https://telegra.ph/file/d43e9011bf46a359d872c.jpg">
-     <img height="200px" src="https://telegra.ph/file/d43e9011bf46a359d872c.jpg">
-  </a>
-</p>
-
 ## Give your 💙
 
 Before clicking on deploy to heroku just click on fork and star just below
@@ -34,12 +28,16 @@ Before clicking on deploy to heroku just click on fork and star just below
 
 Click the below button to watch the video tutorial on deploying
 
-<a href="https://youtu.be/koAzUgNQaDU"><img src="https://img.shields.io/badge/How%20To%20Deploy-blue.svg?logo=Youtube"></a>
-<a href="https://youtu.be/koAzUgNQaDU"><img src="https://img.shields.io/youtube/views/koAzUgNQaDU?style=social">
+<a href=""><img src="https://img.shields.io/badge/How%20To%20Deploy-blue.svg?logo=Youtube"></a>
+<a href=""><img src="https://img.shields.io/youtube/views/koAzUgNQaDU?style=social">
 
 ### Deploy To Heroku 📡</h4>
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/ivetri/TamilVCMusic"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blue?style=for-the-badge&logo=heroku" width="210" height="34.45"/></a></p>
+### Click Below Image to Deploy
+[![Deploy](https://telegra.ph/file/d43e9011bf46a359d872c.jpg)](https://heroku.com/deploy?template=https://github.com/TamilBots/TamilVcMusic.git)
+
+
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/TamilBots/TamilVCMusic"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blue?style=for-the-badge&logo=heroku" width="210" height="34.45"/></a></p>
 
 ###  GET STRING SESSION FROM REPL RUN
 
@@ -183,4 +181,4 @@ And [Call Music](https://github.com/CallsMusic/CallsMusic) ❤
 
 > This project exists thanks to these awesome developers and their codes and contributions.
 
-<a href="https://github.com/ivetri/TamilVcMusic/graphs/contributors"><img src="https://opencollective.com/ivetri/contributors.svg?width=890&button=false" /></a>
+<a href="https://github.com/ivetri/TamilVcMusic/graphs/contributors"><img src="https://opencollective.com/ivetri/tamilVcMusic/contributors.svg?width=890&button=false" /></a>
