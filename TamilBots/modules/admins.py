@@ -8,6 +8,7 @@ from TamilBots.helpers.channelmusic import get_chat_id
 from TamilBots.helpers.decorators import authorized_users_only, errors
 from TamilBots.helpers.filters import command, other_filters
 from TamilBots.services.callsmusic import callsmusic
+from TamilBots.services.queues import queues
 
 
 @Client.on_message(filters.command("reload"))
