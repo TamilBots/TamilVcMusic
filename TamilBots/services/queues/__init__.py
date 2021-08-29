@@ -14,6 +14,10 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from TamilBots.services.queues.queues import clear, get, is_empty, put, task_done
+from TamilBots.services.queues.queues import clear 
+from TamilBots.services.queues.queues import get
+from TamilBots.services.queues.queues import is_empty
+from TamilBots.services.queues.queues import put
+from TamilBots.services.queues.queues import task_done
 
 __all__ = ["clear", "get", "is_empty", "put", "task_done"]
