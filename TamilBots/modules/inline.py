@@ -48,12 +48,3 @@ async def search(client, query):
                 switch_pm_text=("Nothing found"),
                 switch_pm_parameter="",
             )
-
-
-__handlers__ = [
-    [
-        InlineQueryHandler(
-            search
-        )
-    ]
-]
