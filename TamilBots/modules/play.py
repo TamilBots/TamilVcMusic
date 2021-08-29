@@ -8,11 +8,16 @@ import aiohttp
 import ffmpeg
 import requests
 import wget
-from PIL import Image, ImageDraw, ImageFont
-from pyrogram import Client, filters
+from PIL import Image
+from PIL import ImageDraw
+from PIL import ImageFont
+from pyrogram import Client
+from pyrogram import filters
 from pyrogram.types import Voice
 from pyrogram.errors import UserAlreadyParticipant
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
+from pyrogram.types import InlineKeyboardButton
+from pyrogram.types import InlineKeyboardMarkup
+from pyrogram.types import Message
 from Python_ARQ import ARQ
 from youtube_search import YoutubeSearch
 
@@ -27,12 +32,14 @@ from TamilBots.helpers.channelmusic import get_chat_id
 from TamilBots.helpers.errors import DurationLimitError
 from TamilBots.helpers.decorators import errors
 from TamilBots.helpers.decorators import authorized_users_only
-from TamilBots.helpers.filters import command, other_filters
+from TamilBots.helpers.filters import command
+from TamilBots.helpers.filters import other_filters
 from TamilBots.helpers.gets import get_file_name
-from TamilBots.services.callsmusic import callsmusic, queues
-from TamilBots.services.callsmusic.callsmusic import client as USER
+from TamilBots.services.callsmusic import callsmusic
+from TamilBots.services.callsmusic import client as USER
 from TamilBots.services.converter.converter import convert
 from TamilBots.services.downloaders import youtube
+from TamilBots.services.queues import queues
 
 aiohttpsession = aiohttp.ClientSession()
 chat_id = None
