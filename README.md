@@ -178,7 +178,7 @@ If you donlt like to play in linked channel:
 #### Special Credits
 - [Zaute-Km](https://github.com/Zaute-Km): LushaiMusic Developer
 - [Rojserbest](http://github.com/rojserbest): Callsmusic Developer
-
+And [Call Music](https://github.com/CallsMusic/CallsMusic) ❤
 ## All who helped at a glance 
 
 > This project exists thanks to these awesome developers and their codes and contributions.
