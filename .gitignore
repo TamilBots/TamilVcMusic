@@ -1,8 +1,8 @@
-*.session
-*.session-journal
 .env
-__pycache__
-.idea
-.vscode
-raw_files
-downloads
+*.log
+venv/
+.idea/
+*.session
+raw_files/
+downloads/
+__pycache__/
