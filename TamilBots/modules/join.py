@@ -1,8 +1,9 @@
 from pyrogram import Client, filters
 from pyrogram.errors import UserAlreadyParticipant
 import asyncio
-from TamilBots.helpers.decorators import authorized_users_only, errors
-from TamilBots.services.callsmusic.callsmusic import client as USER
+from TamilBots.helpers.decorators import authorized_users_only
+from TamilBots.helpers.decorators import errors
+from TamilBots.services.callsmusic import client as USER
 from TamilBots.config import SUDO_USERS
 
 @Client.on_message(filters.command(["join"]) & ~filters.private & ~filters.bot)
@@ -21,7 +22,7 @@ async def addchannel(client, message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "MusicBot"
+        user.first_name = "TamilMusic"
 
     try:
         await USER.join_chat(invitelink)
