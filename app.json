@@ -15,7 +15,7 @@
   ],        
   "env": {
     "SESSION_NAME": {
-      "description": "Pyrogram session string",
+      "description": "Pyrogram session string Get Fro https://replit.com/@TamilBots/TAMILVCBOT#main.py",
       "required": true
     },
     "BOT_TOKEN": {
