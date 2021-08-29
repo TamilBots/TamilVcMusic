@@ -59,14 +59,14 @@ Click the below button to watch the video tutorial on deploying
 ```sh
 # Install Git First (apt-instll git)
 $ git clone https://github.com/TamilBots/TamilVcMusic
-$ cd VCsMusicBot
+$ cd TamilBots
 # Upgrade sources
 # Install All Requirements 
 $ pip(3) install -r requirements.txt
 # Rename example.env to local.env and fill
 $ npm i -g npm
 # Start Bot 
-$ python3 -m TamilVcMusic
+$ python3 -m TamilBots
 ```
 
 </details>
