@@ -3,7 +3,7 @@ import asyncio
 from TamilBots.config import SUDO_USERS, PMPERMIT
 from pyrogram import filters
 from pyrogram.types import Message
-from TamilBots.services.callsmusic.callsmusic import client as USER
+from TamilBots.services.callsmusic import client as USER
 
 PMSET =True
 pchats = []
