@@ -177,8 +177,3 @@ If you donlt like to play in linked channel:
 - [Zaute-Km](https://github.com/Zaute-Km): LushaiMusic Developer
 - [Rojserbest](http://github.com/rojserbest): Callsmusic Developer
 And [Call Music](https://github.com/CallsMusic/CallsMusic) ❤
-## All who helped at a glance 
-
-> This project exists thanks to these awesome developers and their codes and contributions.
-
-<a href="https://github.com/ivetri/TamilVcMusic/graphs/contributors"><img src="https://opencollective.com/ivetri/tamilVcMusic/contributors.svg?width=890&button=false" /></a>
