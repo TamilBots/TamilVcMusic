@@ -2,14 +2,6 @@
 
 <h1 align="centre">🌟TamilVCMusicBot🌟</h1>
 
-### A bot that can play music on Telegram Group and Channel Voice Chats
-
-<p align="center">
-  <a href="https://github.com/TamilBots/TamilVCsMusic">
-     <img height="30px" src="https://img.shields.io/badge/Tamil%20Music%20Bot-red?style=for-the-badge&logo=github">
-  </a>
-</p>
-
 ## Give your 💙
 
 Before clicking on deploy to heroku just click on fork and star just below
