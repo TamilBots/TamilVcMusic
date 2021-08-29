@@ -17,7 +17,6 @@
 
 import requests
 from pyrogram import Client as Bot
-from pyrogram import idle
 
 from TamilBots.config import API_HASH, API_ID, BG_IMAGE, BOT_TOKEN
 from TamilBots.services.callsmusic.callsmusic import run
@@ -37,4 +36,3 @@ bot = Bot(
 
 bot.start()
 run()
-idle()
