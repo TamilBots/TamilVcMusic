@@ -8,7 +8,7 @@ from TamilBots.helpers.channelmusic import get_chat_id
 from TamilBots.helpers.decorators import authorized_users_only, errors
 from TamilBots.helpers.filters import command, other_filters
 from TamilBots.services.callsmusic import callsmusic
-
+from TamilBots.services.queues import queues
 
 
 @Client.on_message(filters.command(["channelpause","cpause"]) & filters.group & ~filters.edited)
@@ -23,12 +23,12 @@ async def pause(_, message: Message):
       await message.reply("𝐈𝐬 𝐂𝐡𝐚𝐭 𝐄𝐯𝐞𝐧 𝐋𝐢𝐧𝐤𝐞𝐝...")
       return    
     chat_id = chid
-    if (chat_id not in callsmusic.pytgcalls.active_calls) or (
-        callsmusic.pytgcalls.active_calls[chat_id] == "paused"
+    if (chat_id not in callsmusic.active_chats) or (
+        callsmusic.active_chats[chat_id] == "paused"
     ):
         await message.reply_text("❗ 𝐍𝐨𝐭𝐡𝐢𝐧𝐠 𝐢𝐬 𝐩𝐥𝐚𝐲𝐢𝐧𝐠! ☹")
     else:
-        callsmusic.pytgcalls.pause_stream(chat_id)
+        callsmusic.pause(chat_id)
         await message.reply_text("▶️ 𝐏𝐚𝐮𝐬𝐞𝐝! 😑")
 
 
@@ -44,12 +44,12 @@ async def resume(_, message: Message):
       await message.reply("𝐈𝐬 𝐂𝐡𝐚𝐭 𝐄𝐯𝐞𝐧 𝐋𝐢𝐧𝐤𝐞𝐝...")
       return    
     chat_id = chid
-    if (chat_id not in callsmusic.pytgcalls.active_calls) or (
-        callsmusic.pytgcalls.active_calls[chat_id] == "playing"
+    if (chat_id not in callsmusic.active_chats) or (
+        callsmusic.active_chats[chat_id] == "playing"
     ):
         await message.reply_text("❗ 𝐍𝐨𝐭𝐡𝐢𝐧𝐠 𝐢𝐬 𝐩𝐚𝐮𝐬𝐞𝐝! 😕")
     else:
-        callsmusic.pytgcalls.resume_stream(chat_id)
+        callsmusic.resume(chat_id)
         await message.reply_text("⏸ 𝐑𝐞𝐬𝐮𝐦𝐞𝐝! 😍")
 
 
@@ -65,15 +65,15 @@ async def stop(_, message: Message):
       await message.reply("Is chat even linked")
       return    
     chat_id = chid
-    if chat_id not in callsmusic.pytgcalls.active_calls:
+    if chat_id not in callsmusic.active_chats:
         await message.reply_text("❗ 𝐍𝐨𝐭𝐡𝐢𝐧𝐠 𝐢𝐬 𝐬𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠! 😒")
     else:
         try:
-            callsmusic.queues.clear(chat_id)
+            queues.clear(chat_id)
         except QueueEmpty:
             pass
 
-        callsmusic.pytgcalls.leave_group_call(chat_id)
+        await callsmusic.stop(chat_id)
         await message.reply_text("❌ 𝐒𝐭𝐨𝐩𝐩𝐞𝐝 𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠! 😶")
 
 
@@ -90,16 +90,17 @@ async def skip(_, message: Message):
       await message.reply("Is chat even linked")
       return    
     chat_id = chid
-    if chat_id not in callsmusic.pytgcalls.active_calls:
+    if chat_id not in callsmusic.active_chats:
         await message.reply_text("❗ 𝐍𝐨𝐭𝐡𝐢𝐧𝐠 𝐢𝐬 𝐩𝐥𝐚𝐲𝐢𝐧𝐠 𝐭𝐨 𝐬𝐤𝐢𝐩! 😒")
     else:
-        callsmusic.queues.task_done(chat_id)
+        queues.task_done(chat_id)
 
-        if callsmusic.queues.is_empty(chat_id):
-            callsmusic.pytgcalls.leave_group_call(chat_id)
+        if queues.is_empty(chat_id):
+            await callsmusic.stop(chat_id)
         else:
-            callsmusic.pytgcalls.change_stream(
-                chat_id, callsmusic.queues.get(chat_id)["file"]
+            await callsmusic.set_stream(
+                chat_id, 
+                queues.get(chat_id)["file_path"]
             )
 
     qeue = que.get(chat_id)
