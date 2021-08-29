@@ -1,7 +1,13 @@
+import asyncio
+
 from pyrogram import Client
 from pyrogram import filters
+from pyrogram.types import Dialog
+from pyrogram.types import Chat
+from pyrogram.types import Message
 from pyrogram.errors import UserAlreadyParticipant
-import asyncio
+
+from TamilBots.services.callsmusic.callsmusic import client as USER
 from TamilBots.config import SUDO_USERS
 
 
