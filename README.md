@@ -20,6 +20,8 @@ Before clicking on deploy to heroku just click on fork and star just below
 
 Click the below button to watch the video tutorial on deploying
 
+[![Tutorial](https://yt-embed.herokuapp.com/embed?v=kc5LnhEvq48)](https://www.youtube.com/watch?v=kc5LnhEvq48)
+
 <a href="https://youtu.be/kc5LnhEvq48"><img src="https://img.shields.io/badge/How%20To%20Deploy-blue.svg?logo=Youtube"></a>
 <a href="https://youtu.be/kc5LnhEvq48"><img src="https://img.shields.io/youtube/views/kc5LnhEvq48?style=social">
 
