@@ -24,7 +24,7 @@ async def update_admin(client, message: Message):
             for member in await message.chat.get_members(filter="administrators")
         ],
     )
-    await message.reply_text("❇️ Admin cache refreshed!")
+    await message.reply_text("✨ 𝐀𝐝𝐦𝐢𝐧 𝐜𝐚𝐜𝐡𝐞 𝐫𝐞𝐟𝐫𝐞𝐬𝐡𝐞𝐝! 😍")
 
 
 @Client.on_message(command("pause") & other_filters)
@@ -49,10 +49,10 @@ async def resume(_, message: Message):
     if (chat_id not in callsmusic.active_chats) or (
         callsmusic.active_chats[chat_id] == "playing"
     ):
-        await message.reply_text("❗ Nothing is paused!")
+        await message.reply_text("❗ 𝐍𝐨𝐭𝐡𝐢𝐧𝐠 𝐢𝐬 𝐩𝐚𝐮𝐬𝐞𝐝! 😕")
     else:
         callsmusic.resume(chat_id)
-        await message.reply_text("⏸ Resumed!")
+        await message.reply_text("⏸ 𝐑𝐞𝐬𝐮𝐦𝐞𝐝! 🥰")
 
 
 @Client.on_message(command("end") & other_filters)
@@ -61,7 +61,7 @@ async def resume(_, message: Message):
 async def stop(_, message: Message):
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.active_chats:
-        await message.reply_text("❗ Nothing is streaming!")
+        await message.reply_text("❗ 𝐍𝐨𝐭𝐡𝐢𝐧𝐠 𝐢𝐬 𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠! 😬")
     else:
         try:
             queues.clear(chat_id)
@@ -69,7 +69,7 @@ async def stop(_, message: Message):
             pass
 
         await callsmusic.stop(chat_id)
-        await message.reply_text("❌ Stopped streaming!")
+        await message.reply_text("❌ 𝐒𝐭𝐨𝐩𝐩𝐞𝐝 𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠! 🙄")
 
 
 @Client.on_message(command("skip") & other_filters)
@@ -79,7 +79,7 @@ async def skip(_, message: Message):
     global que
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.active_chats:
-        await message.reply_text("❗ Nothing is playing to skip!")
+        await message.reply_text("❗ 𝐍𝐨𝐭𝐡𝐢𝐧𝐠 𝐢𝐬 𝐩𝐥𝐚𝐲𝐢𝐧𝐠 𝐭𝐨 𝐬𝐤𝐢𝐩! 😒")
     else:
         queues.task_done(chat_id)
         if queues.is_empty(chat_id):
@@ -95,7 +95,7 @@ async def skip(_, message: Message):
         skip = qeue.pop(0)
     if not qeue:
         return
-    await message.reply_text(f"- Skipped **{skip[0]}**\n- Now Playing **{qeue[0][0]}**")
+    await message.reply_text(f"- 𝐒𝐤𝐢𝐩𝐩𝐞𝐝 🤗 **{skip[0]}**\n- 𝐍𝐨𝐰 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 🥳 **{qeue[0][0]}**")
 
 
 @Client.on_message(filters.command("admincache"))
@@ -108,4 +108,4 @@ async def admincache(client, message: Message):
             for member in await message.chat.get_members(filter="administrators")
         ],
     )
-    await message.reply_text("❇️ Admin cache refreshed!")
+    await message.reply_text("✨ 𝐀𝐝𝐦𝐢𝐧 𝐜𝐚𝐜𝐡𝐞 𝐫𝐞𝐟𝐫𝐞𝐬𝐡𝐞𝐝! 😍")
