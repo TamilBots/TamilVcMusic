@@ -4,7 +4,7 @@
   "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
   "repository": "https://github.com/TamilBots/TamilVcMusic",
-  "stack": "container",
+  "stack": "heroku-20",
   "buildpacks": [
    {
      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
@@ -15,7 +15,7 @@
   ],        
   "env": {
     "SESSION_NAME": {
-      "description": "Pyrogram session string Get From : https://replit.com/@TamilBots/TAMILVCBOT#main.py",
+      "description": "Pyrogram session string",
       "required": true
     },
     "BOT_TOKEN": {
@@ -39,7 +39,7 @@
     "PROJECT_NAME": {
       "description": "Your MusicPlayer project Name.",
       "required": false,
-      "value": "TamilBots"
+      "value": "TamilVc V 0.0.1"
     },
     "ASSISTANT_NAME": {
       "description": "Your MusicPlayer's assistant Username without @.",
@@ -53,12 +53,12 @@
     "BG_IMAGE": {
       "description": "BG image of bot (Use transparent one) [IGNORE].",
       "required": false,
-      "value": "https://telegra.ph/file/7fb842a7a7791ff75489b.png"
+      "value": "https://telegra.ph//file/bfabfba9e552b67b04ebb.png"
     },     
     "UPDATES_CHANNEL": {
       "description": "Updates Channel without @ [Leave this if you don't have one].",
       "required": false,
-      "value": "TamiliniUpdate"
+      "value": "TamilBots"
     },    
     "API_ID": {
       "description": "App ID from my.telegram.org/apps",
@@ -84,4 +84,3 @@
     }
   }
 }
-
