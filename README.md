@@ -30,7 +30,7 @@ Click the below button to watch the video tutorial on deploying
 ### Click Below Button to Deploy
 
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/TamilBots/TamilVCMusic"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blue?style=for-the-badge&logo=heroku" width="210" height="34.45"/></a></p>
+<a href="https://heroku.com/deploy?template=https://github.com/TamilBots/TamilVCMusic"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blue?style=for-the-badge&logo=heroku" width="210" height="34.45"/></a>
 
 ###  GET STRING SESSION FROM REPL RUN
 
