@@ -163,7 +163,7 @@ If you donlt like to play in linked channel:
 
 </details>
 
-## Made with ❤️ By @TamilBots
+## Made with ❤️ By [TamilBots](https://t.me/TamilBots)
 
 ### Credits
 #### Special Credits
