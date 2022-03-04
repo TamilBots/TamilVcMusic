@@ -7,7 +7,7 @@
   "stack": "heroku-20",
   "buildpacks": [
    {
-     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+     "url": "https://github.com/kirtimalhotra97/heroku-buildpack-ffmpeg-latest"
    },
    {
      "url": "heroku/python"
